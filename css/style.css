@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Open Sans", "Gilroy", "Helvetica", sans-serif;
+  src: url("../fonts/opensans.woff") format("woff"), url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff"), url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/Gilroyextrabold.woff") format("woff"), url("../fonts/Gilroyextrabold.woff2") format("woff2"), url("../fonts/Gilroylight.woff") format("woff"), url("../fonts/Gilroylight.woff2") format("woff2");
+}
+body {
+  font-family: "Open Sans", "Gilroy", "Helvetica", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
