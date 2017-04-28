@@ -1,103 +1,151 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <link href="css/style.css" rel="stylesheet">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="header-logo">
-      </div>
-      <div class="main-menu">
-        <ul class="main-menu__list">
-          <li class="main-menu__item"><a href="#"><span class="main-menu__icon"></span>Поиск по сайту</a></li>
-          <li class="main-menu__item"><a href="#"><span class="main-menu__icon"></span>Войти</a></li>
-          <li class="main-menu__item"><a href="#"><span class="main-menu__icon"></span>Сравнить</a></li>
-          <li class="main-menu__item"><a href="#"><span class="main-menu__icon"></span>Корзина</a></li>
-        </ul>
-      </div>
-      <div class="catalog-menu">
-        <ul class="catalog-menu__list">
-          <li class="catalog-menu__item"><a href="#">Каталог товаров</a></li>
-          <li class="catalog-menu__item"><a href="#">Доставка</a></li>
-          <li class="catalog-menu__item"><a href="#">Гарантия</a></li>
-          <li class="catalog-menu__item"><a href="#">Контакты</a></li>
-        </ul>
-      </div>
-    </header>
+<head>
+  <meta charset="utf-8">
+  <link href="css/style.css" rel="stylesheet">
+  <title>HTML Academy: Девайс</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header-logo">
+    </div>
+    <div class="main-menu">
+      <ul class="main-menu__list">
+        <li class="main-menu__item"><a href="#"><span class="main-menu__icon"></span>Поиск по сайту</a></li>
+        <li class="main-menu__item"><a href="#"><span class="main-menu__icon"></span>Войти</a></li>
+        <li class="main-menu__item"><a href="#"><span class="main-menu__icon"></span>Сравнить</a></li>
+        <li class="main-menu__item"><a href="#"><span class="main-menu__icon"></span>Корзина</a></li>
+      </ul>
+    </div>
+    <div class="catalog-menu">
+      <ul class="catalog-menu__list">
+        <li class="catalog-menu__item"><a href="#">Каталог товаров</a></li>
+        <li class="catalog-menu__item"><a href="#">Доставка</a></li>
+        <li class="catalog-menu__item"><a href="#">Гарантия</a></li>
+        <li class="catalog-menu__item"><a href="#">Контакты</a></li>
+      </ul>
+    </div>
+  </header>
 
+  <div class="catalog">
     <div class="catalog-title">
-      <h1></h1>
+      <h1>Моноподы для селфи</h1>
       <div class="breadcrumbs">
-
-      </div>
-    </div>
-
-    <aside class="filter">
-
-    </aside>
-
-    <div class="catalog">
-      <div class="catalog__sort">
-
-      </div>
-
-      <div class="catalog__items">
-        <div class="catalog__item">
-          <img src="" alt="">
-          <div class="catalog__item-info">
-            <h3></h3>
-            <span></span>
-          </div>
-        </div>
-        <div class="catalog__item">
-          <img src="" alt="">
-          <div class="catalog__item-info">
-            <h3></h3>
-            <span></span>
-          </div>
-        </div>
-        <div class="catalog__item">
-          <img src="" alt="">
-          <div class="catalog__item-info">
-            <h3></h3>
-            <span></span>
-          </div>
-        </div>
-        <div class="catalog__item">
-          <img src="" alt="">
-          <div class="catalog__item-info">
-            <h3></h3>
-            <span></span>
-          </div>
-        </div>
-      </div>
-
-      <div class="pagination">
-
-      </div>
-    </div>
-
-    <footer class="footer">
-      <div class="footer-left">
-
-      </div>
-      <div class="footer-center">
-
-      </div>
-      <div class="footer-right">
-        <ul class="footer-menu">
-        <li class="footer-menu__item"><a href="#"></a></li>
-        <li class="footer-menu__item"><a href="#"></a></li>
-        <li class="footer-menu__item"><a href="#"></a></li>
+        <ul>
+          <li>Главная</li>
+          <li>Каталог товаров</li>
+          <li>Моноподы для селфи</li>
         </ul>
-        <p></p>
-        <div class="htmlacademy-logo">
+      </div>
+    </div>
 
+    <h3>Фильтр:</h3>
+
+    <form class="catalog-filter" action="index.html" method="post">
+
+      <fieldset class="catalog-filter__sort">
+        <legend>Сортировка:</legend>
+        <select class="" name="">
+          <option value="">по цене</option>
+          <option value="">по типу</option>
+          <option value="">по популярности</option>
+        </select>
+      </fieldset>
+
+      <div class="sort-price">
+        <label for="sort-price">Стоимость</label>
+        <input type="range" min="0" max="5000" step="100" value="100" id="sort-price">
+      </div>
+
+      <fieldset class="catalog-filter__color">
+        <legend>Цвет</legend>
+        <label for="1">Черный</label>
+        <input id="1" type="checkbox" checked>
+        <label for="2">Белый</label>
+        <input id="2" type="checkbox">
+        <label for="3">Синий</label>
+        <input id="3" type="checkbox" checked>
+        <label for="4">Красный</label>
+        <input id="4" type="checkbox" checked>
+        <label for="5">Розовый</label>
+        <input id="5" type="checkbox">
+      </fieldset>
+      <fieldset class="catalog-filter__bluetooth">
+        <legend>Bluetooth</legend>
+        <label for="01">Есть</label>
+        <input id="01" type="radio">
+        <label for="02">Нет</label>
+        <input id="02" type="radio">
+      </fieldset>
+
+      <button type="button" name="button">Показать</button>
+    </form>
+
+    <div class="catalog__items">
+      <div class="catalog__item">
+        <img src="" alt="">
+        <div class="catalog__item-info">
+          <h3></h3>
+          <span></span>
         </div>
       </div>
-    </footer>
+      <div class="catalog__item">
+        <img src="" alt="">
+        <div class="catalog__item-info">
+          <h3></h3>
+          <span></span>
+        </div>
+      </div>
+      <div class="catalog__item">
+        <img src="" alt="">
+        <div class="catalog__item-info">
+          <h3></h3>
+          <span></span>
+        </div>
+      </div>
+      <div class="catalog__item">
+        <img src="" alt="">
+        <div class="catalog__item-info">
+          <h3></h3>
+          <span></span>
+        </div>
+      </div>
+    </div>
 
-  </body>
+    <div class="pagination">
+
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-left">
+      <span>device</span>
+      <p>г. Москва, ул. Строителей, 15</p>
+      <div class="footer--decor">
+      </div>
+    </div>
+    <div class="footer-center">
+      <ul class="footer-center__delivery">
+        <li class="delivery-item"><a href="#">Доставка</a></li>
+        <li class="delivery-item"><a href="#">Гарантия</a></li>
+        <li class="delivery-item"><a href="#">Контакты</a></li>
+      </ul>
+      <div class="footer__social">
+        <a href="#" class="footer__social-btn footer__social-btn--fb"></a>
+        <a href="#" class="footer__social-btn footer__social-btn--insta"></a>
+        <a href="#" class="footer__social-btn footer__social-btn--tw"></a>
+      </div>
+    </div>
+    <div class="footer-right">
+      <ul class="footer-menu">
+        <li class="footer-menu__item"><a href="#"><span></span>Войти</a></li>
+        <li class="footer-menu__item"><a href="#"><span></span>Сравнить</a></li>
+        <li class="footer-menu__item"><a href="#"><span></span>Корзина</a></li>
+      </ul>
+      <p>Тел.: +7 (495) 495-95-95</p>
+      <a href="#"class="htmlacademy-logo"></a>
+    </div>
+  </footer>
+
+</body>
 </html>
