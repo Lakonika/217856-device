@@ -1,0 +1,51 @@
+.main-menu {
+  width: 100%;
+  margin-bottom: 50px;
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: inline-block;
+    width: auto;
+
+    &:first-child {
+    width: 50%;
+    }
+
+    &:nth-child(2) {
+      margin-right: 200px;
+    }
+
+    & a {
+      color: black;
+      font-size: 26,46px;
+      text-decoration: none;
+    }
+  }
+
+  .main-menu__icon {
+    display: inline-block;
+    vertical-align: top;
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+
+    &-search {
+      background: url("../img/search.png") no-repeat 0 1px;
+    }
+
+    &-enter {
+      background: url("../img/user.png") no-repeat 0 3px;
+    }
+
+    &-compare {
+      background: url("../img/compare.png") no-repeat 0 5px;
+    }
+
+    &-cart {
+      background: url("../img/cart.png") no-repeat 0 5px;
+    }
+  }
+}

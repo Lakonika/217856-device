@@ -1,8 +1,8 @@
 {
-  "name": "mishka",
+  "name": "device",
   "version": "0.1.0",
   "private": true,
-  "description": "Личный проект «Мишка» от HTML Academy",
+  "description": "Личный проект «Device» от HTML Academy",
   "devDependencies": {
     "autoprefixer": "6.5.3",
     "grunt": "1.0.1",
