@@ -10,7 +10,28 @@
     width: auto;
 
     &:first-child {
-    width: 50%;
+    width: 51%;
+
+    & span {
+      display: inline-block;
+      vertical-align: sub;
+      margin-left: 15px;
+      width: 18px;
+      height: 18px;
+      background: url("../img/plus.png") no-repeat 0 0;
+    }
+    }
+
+    &:nth-child(2) {
+      margin-right: 30px;
+
+      & a {
+        letter-spacing: 4px;
+      }
+    }
+
+    &:nth-child(3) {
+      margin-right: 110px;
     }
 
     & a {
@@ -19,6 +40,16 @@
       font-size: 18px;
       font-weight: bold;
       text-decoration: none;
+      letter-spacing: 3px;
     }
   }
+}
+
+.catalog-submenu {
+  display: none;
+}
+
+.catalog-submenu__item {
+  list-style: none;
+  font-size: 15px;
 }
