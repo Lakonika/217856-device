@@ -44,12 +44,23 @@
   font-size: 15px;
 }
 .delivery {
+  display: inline-block;
+  vertical-align: top;
   width: 100%;
   background-color: #e5e5e5;
 }
 .delivery__wrapper {
   width: 1160px;
   margin: auto;
+}
+.delivery__items {
+  width: 280px;
+  float: left;
+  margin-right: 120px;
+}
+.delivery__details {
+  width: 460px;
+  float: left;
 }
 .header {
   width: 1160px;
@@ -67,6 +78,9 @@
   text-transform: uppercase;
   font-size: 48px;
   font-weight: bold;
+}
+.info {
+  clear: both;
 }
 .main-menu {
   width: 100%;
