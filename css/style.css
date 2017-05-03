@@ -47,20 +47,88 @@
   display: inline-block;
   vertical-align: top;
   width: 100%;
+  height: 288px;
   background-color: #e5e5e5;
 }
 .delivery__wrapper {
+  position: relative;
   width: 1160px;
   margin: auto;
+}
+.delivery__list {
+  margin-top: -18px;
+  list-style: none;
+}
+.delivery__list::after {
+  display: block;
+  position: absolute;
+  top: -100px;
+  left: 275px;
+  content: "";
+  width: 7px;
+  height: 319px;
+  background-color: #000000;
 }
 .delivery__items {
   width: 280px;
   float: left;
   margin-right: 120px;
 }
+.delivery__item {
+  margin-bottom: 25px;
+}
+.delivery__item a {
+  display: block;
+  width: 160px;
+  height: 8px;
+  border-top: 16px solid #e5e5e5;
+  border-bottom: 16px solid #e5e5e5;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 8px;
+  background-color: #f0c52e;
+  letter-spacing: 4px;
+}
+.delivery__item a:hover {
+  height: 40px;
+  line-height: 40px;
+  background-color: #f0c52e;
+  border-top: 0;
+  border-bottom: 0;
+}
+.delivery__item a:active {
+  width: 280px;
+  color: #f7e184;
+  background-color: #000000;
+}
+.delivery__item-1 a {
+  border-top-color: white;
+}
 .delivery__details {
   width: 460px;
   float: left;
+}
+.delivery__details h2 {
+  margin: -30px 0 26px 0;
+}
+.delivery__details p {
+  color: #464646;
+  line-height: 30px;
+}
+.delivery__details::after {
+  position: absolute;
+  top: -12px;
+  right: 63px;
+  content: "";
+  width: 140px;
+  height: 170px;
+  background: url("../img/delivery.png") no-repeat 0 0;
+}
+.delivery__warranty {
+  display: none;
+}
+.delivery__credit {
+  display: none;
 }
 .header {
   width: 1160px;
@@ -121,7 +189,7 @@
   background: url("../img/user.png") no-repeat 3px 3px;
 }
 .main-menu .main-menu__icon-compare {
-  background: url("../img/compare.png") no-repeat 15px 5px;
+  background: url("../img/compare.png") no-repeat 8px 5px;
 }
 .main-menu .main-menu__icon-cart {
   background: url("../img/cart.png") no-repeat 8px 5px;
@@ -130,7 +198,7 @@
 .main-nav {
   display: block;
   width: 1160px;
-  margin: 95px auto;
+  margin: 95px auto 260px;
   font-size: 0;
   clear: both;
 }
