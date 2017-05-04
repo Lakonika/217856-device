@@ -1,3 +1,47 @@
+.brends {
+  width: 1160px;
+  height: 150px;
+  margin: auto;
+  margin-top: 100px;
+}
+.brend__list {
+  display: inline-block;
+  width: 100%;
+  list-style: none;
+  font-size: 0;
+}
+.brend__item {
+  display: inline-block;
+  width: 25%;
+}
+.brend__item a {
+  display: block;
+  height: 90px;
+}
+.brend__item-1 a {
+  background: url("../img/logo1.jpg") no-repeat center;
+}
+.brend__item-1 a:hover {
+  background-image: url("../img/logo1active.jpg");
+}
+.brend__item-2 a {
+  background: url("../img/logo2.jpg") no-repeat center;
+}
+.brend__item-2 a:hover {
+  background-image: url("../img/logo2active.jpg");
+}
+.brend__item-3 a {
+  background: url("../img/logo3.jpg") no-repeat center;
+}
+.brend__item-3 a:hover {
+  background-image: url("../img/logo3active.jpg");
+}
+.brend__item-4 a {
+  background: url("../img/logo4.jpg") no-repeat center;
+}
+.brend__item-4 a:hover {
+  background-image: url("../img/logo4active.jpg");
+}
 .catalog-menu {
   width: 100%;
 }
@@ -102,7 +146,10 @@
   background-color: #000000;
 }
 .delivery__item-1 a {
-  border-top-color: white;
+  width: 280px;
+  color: #f7e184;
+  background-color: #000000;
+  border-color: #000000;
 }
 .delivery__details {
   width: 460px;
