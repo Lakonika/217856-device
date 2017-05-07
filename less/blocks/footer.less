@@ -1,6 +1,6 @@
 .footer {
   clear: both;
-  padding-top: 45px;
+  padding-top: 55px;
   box-sizing: border-box;
   background-color: @dark-grey;
   width: 100%;
@@ -13,14 +13,13 @@
 
   &__left {
     position: relative;
-    display: inline-block;
+    float: left;
     width: 300px;
-    height: 230px;
-    margin-right: 60px;
+    margin-right: 65px;
 
     & p {
       color: white;
-      margin-bottom: 90px;
+      margin: 20px 0 90px;
     }
 
     &::after {
@@ -42,10 +41,12 @@
   }
 
   &__center {
-    display: inline-block;
+    float: left;
     width: 440px;
     height: 230px;
-    margin-right: 20px;
+    margin-right: 25px;
+    padding-top: 80px;
+    box-sizing: border-box;
   }
 
   &__delivery {
@@ -71,16 +72,42 @@
   }
 
   &__right {
-    display: inline-block;
+    position: relative;
+    float: left;
     width: 330px;
-    height: 230px;
+    padding-top: 12px;
+
+    & p {
+      color: white;
+      text-align: right;
+      margin-bottom: 110px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 30px;
+      height: 40px;
+      background: url("../img/htmlacademy.png") no-repeat 0 0;
+    }
   }
 
   &__menu {
     list-style: none;
+    margin-bottom: 45px;
 
     &-item {
       display: inline-block;
+      width: 32%;
+      padding-left: 25px;
+      box-sizing: border-box;
+      text-align: right;
+
+      &:first-of-type {
+        text-align: left;
+      }
 
       & a {
         font-family: "Open Sans", "Arial", sans-serif;

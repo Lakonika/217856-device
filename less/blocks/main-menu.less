@@ -1,9 +1,13 @@
 .main-menu {
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 65px;
+  font-size: 0;
 
   &__list {
     list-style: none;
+    display: block;
+    width: 49%;
+    float: right;
   }
 
   &__item {
@@ -11,21 +15,18 @@
     width: auto;
 
     &:first-child {
-    width: 51%;
+      margin-right: 210px;
     }
 
     &:nth-child(2) {
-      margin-right: 190px;
-    }
-
-    &:nth-child(3) {
-      margin-right: 13px;
+      margin-right: 25px;
     }
 
     & a {
       color: black;
-      font-size: 26,46px;
+      font-size: 15px;
       text-decoration: none;
+      font-family: "Open Sans", "Arial", sans-serif;
     }
   }
 
@@ -35,10 +36,6 @@
     width: 20px;
     height: 20px;
     margin-right: 12px;
-
-    &-search {
-      background: url("../img/search.png") no-repeat 0 1px;
-    }
 
     &-enter {
       background: url("../img/user.png") no-repeat 3px 3px;
