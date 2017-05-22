@@ -1,4 +1,4 @@
-.delivery {
+.advantages {
   display: inline-block;
   vertical-align: top;
   width: 100%;
@@ -27,48 +27,40 @@
     }
   }
 
-  &__items {
+  &__bullets {
     width: 280px;
     float: left;
     margin-right: 120px;
-  }
 
-  &__item {
-    margin-bottom: 25px;
-
-    & a {
-      display: block;
-      width: 160px;
-      height: 8px;
-      border-top: 16px solid @delivery;
-      border-bottom: 16px solid @delivery;
-      text-transform: uppercase;
-      font-weight: bold;
-      line-height: 8px;
-      background-color: @brd-yellow;
-      letter-spacing: 4px;
-
-      &:hover {
-        height: 40px;
-        line-height: 40px;
-        background-color: @brd-yellow;
-        border-top: 0;
-        border-bottom: 0;
-      }
-
-        &:active {
-          width: 280px;
-          color: @font-yellow;
-          background-color: #000000;
-      }
+    & input {
+      display: none;
     }
   }
 
-  &__item-1 a {
-    width: 280px;
-    color: @font-yellow;
-    background-color: #000000;
-    border-color: #000000;
+  & label {
+    display: block;
+    width: 160px;
+    height: 8px;
+    border-top: 16px solid @delivery;
+    border-bottom: 16px solid @delivery;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 8px;
+    background-color: @brd-yellow;
+    letter-spacing: 4px;
+
+    &:hover,
+    &:active {
+      height: 40px;
+      line-height: 40px;
+      background-color: @brd-yellow;
+      border-top: 0;
+      border-bottom: 0;
+    }
+  }
+
+  &__item {
+    display: none;
   }
 
   &__details {
@@ -94,12 +86,22 @@
       background: url("../img/delivery.png") no-repeat 0 0;
     }
   }
+}
 
-  &__warranty {
-    display: none;
-  }
+#advantages__slide-1:checked ~ .advantages__list li:nth-child(1) label,
+#advantages__slide-2:checked ~ .advantages__list li:nth-child(2) label,
+#advantages__slide-3:checked ~ .advantages__list li:nth-child(3) label,
+.advantages__list a.active,
+.advantages__list label.active {
+  width: 280px;
+  color: @font-yellow;
+  background-color: #000000;
+  border-color: #000000;
+}
 
-  &__credit {
-    display: none;
-  }
+#advantages__slide-1:checked ~ .advantages__slides .advantages__item:nth-child(1),
+#advantages__slide-2:checked ~ .advantages__slides .advantages__item:nth-child(2),
+#advantages__slide-3:checked ~ .advantages__slides .advantages__item:nth-child(3),
+.advantages__item.active {
+  display: block;
 }
