@@ -85,117 +85,160 @@
 .catalog-submenu {
   display: none;
 }
-.catalog-submenu .catalog-submenu__item {
-  list-style: none;
+.catalog-submenu__list {
+  width: 200px;
+  display: inline-block;
+  vertical-align: top;
 }
-.catalog-submenu .catalog-submenu__item a {
+.catalog-submenu__item {
+  list-style: none;
+  display: block;
+}
+.catalog-submenu__item a {
   font-size: 15px;
   font-weight: normal;
   text-transform: none;
   letter-spacing: normal;
+  line-height: 36px;
   font-family: "Open Sans", "Arial", sans-serif;
 }
 .catalog-menu__item:hover .catalog-submenu {
   display: block;
   width: 1100px;
   position: absolute;
-  top: 40px;
+  top: 50px;
   left: 0;
   background-color: #f7e296;
   z-index: 150;
+  padding-bottom: 28px;
 }
 .advantages {
-  display: inline-block;
-  vertical-align: top;
-  width: 100%;
-  height: 288px;
-  background-color: #e5e5e5;
+  padding-bottom: 69px;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 100px, #e5e5e5 100px);
 }
-.advantages__wrapper {
-  position: relative;
-  width: 1160px;
-  margin: auto;
+.advantages .container {
+  padding-bottom: 32px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 277px, black 277px, black 284px, rgba(255, 255, 255, 0) 284px);
+  background-origin: content-box;
 }
-.advantages__list {
-  margin-top: -18px;
+.advantages input {
+  display: none;
+}
+.advantages-tabs {
+  float: left;
+  width: 280px;
+  padding: 0;
+  margin-top: 80px;
   list-style: none;
 }
-.advantages__list::after {
-  display: block;
-  position: absolute;
-  top: -100px;
-  left: 275px;
-  content: "";
-  width: 7px;
-  height: 319px;
-  background-color: #000000;
+.advantages-tabs li {
+  margin-bottom: 24px;
 }
-.advantages__bullets {
-  width: 280px;
-  float: left;
-  margin-right: 120px;
-}
-.advantages__bullets input {
-  display: none;
-}
-.advantages label {
-  display: block;
+.advantages-tabs a,
+.advantages-tabs label {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
   width: 160px;
-  height: 8px;
-  border-top: 16px solid #e5e5e5;
-  border-bottom: 16px solid #e5e5e5;
+  padding: 0;
+  font-family: 'Gilroy Extrabold', 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  text-decoration: none;
   text-transform: uppercase;
-  font-weight: bold;
-  line-height: 8px;
-  background-color: #f0c52e;
-  letter-spacing: 4px;
-}
-.advantages label:hover,
-.advantages label:active {
-  height: 40px;
   line-height: 40px;
-  background-color: #f0c52e;
-  border-top: 0;
-  border-bottom: 0;
+  text-align: center;
+  vertical-align: top;
+  letter-spacing: 3.6px;
+  color: black;
+  cursor: pointer;
 }
-.advantages__item {
+.advantages-tabs a::before,
+.advantages-tabs label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 40%;
+  z-index: -1;
+  width: 100%;
+  height: 20%;
+  background-color: #f0c52e;
+  transition: all 0.2s;
+}
+.advantages-tabs a:hover::before,
+.advantages-tabs label:hover::before {
+  top: 0;
+  height: 100%;
+}
+#adv-slide-1:checked ~ .advantages-tabs li:nth-child(1) label,
+#adv-slide-2:checked ~ .advantages-tabs li:nth-child(2) label,
+#adv-slide-3:checked ~ .advantages-tabs li:nth-child(3) label,
+.advantages-tabs a.active,
+.advantages-tabs label.active {
+  padding-right: 120px;
+  background-image: none;
+  background-color: black;
+  color: #f7e184;
+}
+#adv-slide-1:checked ~ .advantages-tabs li:nth-child(1) label::before,
+#adv-slide-2:checked ~ .advantages-tabs li:nth-child(2) label::before,
+#adv-slide-3:checked ~ .advantages-tabs li:nth-child(3) label::before,
+.advantages-tabs a.active::before,
+.advantages-tabs label.active::before {
+  content: none;
+}
+.advantages .tab-contents {
+  float: right;
+  width: 760px;
+  margin-top: 35px;
+}
+.advantage {
+  position: relative;
   display: none;
 }
-.advantages__details {
-  width: 460px;
-  float: left;
-}
-.advantages__details h2 {
-  margin: -30px 0 26px 0;
-}
-.advantages__details p {
-  color: #464646;
-  line-height: 30px;
-}
-.advantages__details::after {
-  position: absolute;
-  top: -12px;
-  right: 63px;
-  content: "";
-  width: 140px;
-  height: 170px;
-  background: url("../img/delivery.png") no-repeat 0 0;
-}
-#advantages__slide-1:checked ~ .advantages__list li:nth-child(1) label,
-#advantages__slide-2:checked ~ .advantages__list li:nth-child(2) label,
-#advantages__slide-3:checked ~ .advantages__list li:nth-child(3) label,
-.advantages__list a.active,
-.advantages__list label.active {
-  width: 280px;
-  color: #f7e184;
-  background-color: #000000;
-  border-color: #000000;
-}
-#advantages__slide-1:checked ~ .advantages__slides .advantages__item:nth-child(1),
-#advantages__slide-2:checked ~ .advantages__slides .advantages__item:nth-child(2),
-#advantages__slide-3:checked ~ .advantages__slides .advantages__item:nth-child(3),
-.advantages__item.active {
+#adv-slide-1:checked ~ .tab-contents .advantage:nth-child(1),
+#adv-slide-2:checked ~ .tab-contents .advantage:nth-child(2),
+#adv-slide-3:checked ~ .tab-contents .advantage:nth-child(3),
+.advantage.active {
   display: block;
+}
+.advantage h2 {
+  margin-bottom: 31px;
+  font-family: 'Gilroy Extrabold', 'Arial', sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+.advantage p {
+  width: 470px;
+  line-height: 30px;
+  letter-spacing: 0.25px;
+}
+.sprite-before::before {
+  content: '';
+  position: absolute;
+  background-repeat: no-repeat;
+}
+.advantage-sprite-delivery::before {
+  top: 11px;
+  right: 66px;
+  width: 136px;
+  height: 164px;
+  background-image: url('../img/delivery.png');
+}
+.advantage-sprite-credit::before {
+  top: -15px;
+  right: 70px;
+  width: 156px;
+  height: 188px;
+  background-image: url('../img/credit.png');
+}
+.advantage-sprite-warranty::before {
+  top: -14px;
+  right: 46px;
+  width: 171px;
+  height: 195px;
+  background-image: url('../img/warranty.png');
 }
 .footer {
   clear: both;
@@ -459,7 +502,7 @@
 .main-nav {
   display: block;
   width: 1160px;
-  margin: 95px auto 260px;
+  margin: 95px auto 160px;
   font-size: 0;
   clear: both;
 }
@@ -651,26 +694,26 @@
   width: 300px;
 }
 @font-face {
-  font-family: "Gilroy";
-  src: url("../fonts/gilroyextrabold.woff") format("woff"), url("../fonts/gilroyextrabold.woff2") format("woff2");
+  font-family: "Gilroy Extrabold";
+  src: url("../fonts/Gilroyextrabold.woff") format("woff"), url("../fonts/Gilroyextrabold.woff2") format("woff2");
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
-  font-family: "Gilroy";
-  src: url("../fonts/gilroylight.woff") format("woff"), url("../fonts/gilroylight.woff2") format("woff2");
+  font-family: "Gilroy Light";
+  src: url("../fonts/Gilroylight.woff") format("woff"), url("../fonts/Gilroylight.woff2") format("woff2");
   font-style: normal;
   font-weight: 300;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/opensans.woff") format("woff"), url("../fonts/opensans.woff2") format("woff2");
+  src: url("../fonts/Opensans.woff") format("woff"), url("../fonts/Opensans.woff2") format("woff2");
   font-style: normal;
   font-weight: 300;
 }
 @font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/opensansbold.woff") format("woff"), url("../fonts/opensansbold.woff2") format("woff2");
+  font-family: "Open Sans Bold";
+  src: url("../fonts/Opensansbold.woff") format("woff"), url("../fonts/Opensansbold.woff2") format("woff2");
   font-style: normal;
   font-weight: 700;
 }
@@ -683,21 +726,21 @@ ul {
   padding: 0;
 }
 body {
-  font-family: "Open Sans", "Gilroy", "Arial", sans-serif;
+  font-family: "Open Sans", "Gilroy Light", "Arial", sans-serif;
 }
 h1 {
-  font-family: "Gilroy", "Arial", sans-serif;
+  font-family: "Gilroy Extrabold", "Arial", sans-serif;
 }
 h2 {
-  font-family: "Gilroy", "Arial", sans-serif;
+  font-family: "Gilroy Extrabold", "Arial", sans-serif;
   font-size: 47px;
 }
 h3 {
-  font-family: "Gilroy", "Arial", sans-serif;
+  font-family: "Gilroy Extrabold", "Arial", sans-serif;
   font-size: 18px;
 }
 a {
-  font-family: "Gilroy", "Arial", sans-serif;
+  font-family: "Gilroy Extrabold", "Arial", sans-serif;
   font-size: 18px;
   text-decoration: none;
   color: black;
@@ -707,5 +750,9 @@ p {
   font-size: 15px;
 }
 span {
-  font-family: "Gilroy", "Arial", sans-serif;
+  font-family: "Gilroy Extrabold", "Arial", sans-serif;
+}
+.container {
+  width: 1160px;
+  margin: auto;
 }

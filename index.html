@@ -29,8 +29,12 @@
               <li class="catalog-submenu__item"><a href="#">Виртуальная реальность</a></li>
               <li class="catalog-submenu__item"><a href="#">Моноподы для селфи</a></li>
               <li class="catalog-submenu__item"><a href="#">Экшн-камеры</a></li>
+            </ul>
+            <ul class="catalog-submenu__list">
               <li class="catalog-submenu__item"><a href="#">Фитнес-браслеты</a></li>
               <li class="catalog-submenu__item"><a href="#">Умные часы</a></li>
+            </ul>
+            <ul class="catalog-submenu__list">
               <li class="catalog-submenu__item"><a href="#">Квадрокоптеры</a></li>
             </ul>
           </div>
@@ -148,93 +152,105 @@
   </nav>
 
   <section class="advantages">
-    <div class="advantages__wrapper clearfix">
-      <div class="advantages__bullets">
-        <input type="radio" name="advantages__slider-control" id="advantages__slide-1" value="adv-slide-1" checked="">
-        <input type="radio" name="advantages__slider-control" id="advantages__slide-2" value="adv-slide-2">
-        <input type="radio" name="advantages__slider-control" id="advantages__slide-3" value="adv-slide-3">
+    <div class="container clearfix">
+      <input type="radio" name="adv-slider-control" id="adv-slide-1" value="adv-slide-1" checked="">
+      <input type="radio" name="adv-slider-control" id="adv-slide-2" value="adv-slide-2">
+      <input type="radio" name="adv-slider-control" id="adv-slide-3" value="adv-slide-3">
 
-        <ul class="advantages__list">
-          <li><label for="advantages__slide-1">Доставка</label></li>
-          <li><label for="advantages__slide-2">Гарантия</label></li>
-          <li><label for="advantages__slide-3">Кредит</label></li>
-        </ul>
-      </div>
-      <div class="advantages__slides">
-      <div class="advantages__item advantages__details">
-        <h2>Доставка</h2>
-        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-      </div>
-      <div class="advantages__item advantages__warranty">
-        <h2>Гарантия</h2>
-        <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.Товар, не дом, конечно же.</p>
-      </div>
-      <div class="advantages__item advantages__credit">
-        <h2>Кредит</h2>
-        <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-      </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="brends">
-    <ul class="brend__list">
-      <li class="brend__item brend__item-1"><a href="#"></a></li>
-      <li class="brend__item brend__item-2"><a href="#"></a></li>
-      <li class="brend__item brend__item-3"><a href="#"></a></li>
-      <li class="brend__item brend__item-4"><a href="#"></a></li>
-    </ul>
-  </div>
-
-  <div class="info">
-    <div class="about">
-      <h2>О нас</h2>
-      <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-      <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-      <ul class="about__list">
-        <li class="about__item">Деловые Линии</li>
-        <li class="about__item">Автотрейдинг</li>
-        <li class="about__item">ЖелДорЭкспедиция</li>
+      <ul class="advantages-tabs">
+        <li><label for="adv-slide-1">Доставка</label></li>
+        <li><label for="adv-slide-2">Гарантия</label></li>
+        <li><label for="adv-slide-3">Кредит</label></li>
       </ul>
-      <a href="#">Подробнее о нас</a>
-    </div>
-    <div class="contacts">
-      <h2>Контакты</h2>
-      <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-      <img class="contacts__map" src="img/map.jpg" alt="">
-      <a href="#">Напишите нам</a>
-    </div>
-  </div>
 
-  <footer class="footer">
-    <div class="footer__container">
-      <div class="footer__left">
-        <span class="footer__logo">device</span>
-        <p>г. Москва, ул. Строителей, 15</p>
-      </div>
-      <div class="footer__center">
-        <ul class="footer__delivery">
-          <li class="footer__delivery-item"><a href="#">Доставка</a></li>
-          <li class="footer__delivery-item"><a href="#">Гарантия</a></li>
-          <li class="footer__delivery-item"><a href="#">Контакты</a></li>
-        </ul>
-        <div class="footer__social">
-          <a href="#" class="footer__social-btn footer__social-btn--fb"></a>
-          <a href="#" class="footer__social-btn footer__social-btn--insta"></a>
-          <a href="#" class="footer__social-btn footer__social-btn--tw"></a>
+      <div class="tab-contents">
+        <div class="advantage sprite-before advantage-sprite-delivery">
+          <h2>Доставка</h2>
+          <p>
+            Мы с удовольствием доставим ваш товар прямо к вашему
+            подъезду совершенно бесплатно! Ведь мы неплохо
+            заработаем, поднимая его на ваш этаж.
+          </p>
+        </div>
+
+        <div class="advantage sprite-before advantage-sprite-warranty">
+          <h2>Гарантия</h2>
+          <p>
+            Если из-за возгарания купленного у нас товара у вас сгорит
+            дом — не переживайте, мы выдадим вам новый.
+            Товар, не дом, конечно же.
+          </p>
+        </div>
+
+        <div class="advantage sprite-before advantage-sprite-credit">
+          <h2>Кредит</h2>
+          <p>
+            Залезть в долговую яму стало проще! Кредитные
+            консультанты подберут для вас наиболее выгодные
+            условия кредита. Выгодные для нашего банка, разумеется.</p>
+          </div>
         </div>
       </div>
-      <div class="footer__right">
-        <ul class="footer__menu">
-          <li class="footer__menu-item"><a href="#"><span></span>Войти</a></li>
-          <li class="footer__menu-item"><a href="#"><span></span>Сравнить</a></li>
-          <li class="footer__menu-item"><a href="#"><span></span>Корзина</a></li>
+    </section>
+
+    <div class="brends">
+      <ul class="brend__list">
+        <li class="brend__item brend__item-1"><a href="#"></a></li>
+        <li class="brend__item brend__item-2"><a href="#"></a></li>
+        <li class="brend__item brend__item-3"><a href="#"></a></li>
+        <li class="brend__item brend__item-4"><a href="#"></a></li>
+      </ul>
+    </div>
+
+    <div class="info">
+      <div class="about">
+        <h2>О нас</h2>
+        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+        <ul class="about__list">
+          <li class="about__item">Деловые Линии</li>
+          <li class="about__item">Автотрейдинг</li>
+          <li class="about__item">ЖелДорЭкспедиция</li>
         </ul>
-        <p>Тел.: +7 (495) 495-95-95</p>
-        <a href="https://htmlacademy.ru/intensive/htmlcss" class="htmlacademy-logo"></a>
+        <a href="#">Подробнее о нас</a>
+      </div>
+      <div class="contacts">
+        <h2>Контакты</h2>
+        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+        <img class="contacts__map" src="img/map.jpg" alt="">
+        <a href="#">Напишите нам</a>
       </div>
     </div>
-  </footer>
 
-</body>
-</html>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__left">
+          <span class="footer__logo">device</span>
+          <p>г. Москва, ул. Строителей, 15</p>
+        </div>
+        <div class="footer__center">
+          <ul class="footer__delivery">
+            <li class="footer__delivery-item"><a href="#">Доставка</a></li>
+            <li class="footer__delivery-item"><a href="#">Гарантия</a></li>
+            <li class="footer__delivery-item"><a href="#">Контакты</a></li>
+          </ul>
+          <div class="footer__social">
+            <a href="#" class="footer__social-btn footer__social-btn--fb"></a>
+            <a href="#" class="footer__social-btn footer__social-btn--insta"></a>
+            <a href="#" class="footer__social-btn footer__social-btn--tw"></a>
+          </div>
+        </div>
+        <div class="footer__right">
+          <ul class="footer__menu">
+            <li class="footer__menu-item"><a href="#"><span></span>Войти</a></li>
+            <li class="footer__menu-item"><a href="#"><span></span>Сравнить</a></li>
+            <li class="footer__menu-item"><a href="#"><span></span>Корзина</a></li>
+          </ul>
+          <p>Тел.: +7 (495) 495-95-95</p>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="htmlacademy-logo"></a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+  </html>
