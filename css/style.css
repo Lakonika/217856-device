@@ -100,7 +100,7 @@
   text-transform: none;
   letter-spacing: normal;
   line-height: 36px;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "opensans", "Arial", sans-serif;
 }
 .catalog-menu__item:hover .catalog-submenu {
   display: block;
@@ -141,7 +141,7 @@
   display: inline-block;
   width: 160px;
   padding: 0;
-  font-family: 'Gilroy Extrabold', 'Arial', sans-serif;
+  font-family: 'Gilroyextrabold', 'Arial', sans-serif;
   font-size: 18px;
   font-weight: 800;
   text-decoration: none;
@@ -204,7 +204,7 @@
 }
 .advantage h2 {
   margin-bottom: 31px;
-  font-family: 'Gilroy Extrabold', 'Arial', sans-serif;
+  font-family: 'Gilroyextrabold', 'Arial', sans-serif;
   font-size: 47px;
   font-weight: 800;
   letter-spacing: 1px;
@@ -338,7 +338,7 @@
   text-align: left;
 }
 .footer__menu-item a {
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "opensans", "Arial", sans-serif;
   font-size: 15px;
   color: white;
 }
@@ -480,7 +480,7 @@
   color: black;
   font-size: 15px;
   text-decoration: none;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "opensans", "Arial", sans-serif;
 }
 .main-menu .main-menu__icon {
   display: inline-block;
@@ -694,26 +694,26 @@
   width: 300px;
 }
 @font-face {
-  font-family: "Gilroy Extrabold";
+  font-family: "Gilroyextrabold";
   src: url("../fonts/Gilroyextrabold.woff") format("woff"), url("../fonts/Gilroyextrabold.woff2") format("woff2");
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
-  font-family: "Gilroy Light";
+  font-family: "Gilroylight";
   src: url("../fonts/Gilroylight.woff") format("woff"), url("../fonts/Gilroylight.woff2") format("woff2");
   font-style: normal;
   font-weight: 300;
 }
 @font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/Opensans.woff") format("woff"), url("../fonts/Opensans.woff2") format("woff2");
+  font-family: "opensans";
+  src: url("../fonts/opensans.woff") format("woff"), url("../fonts/opensans.woff2") format("woff2");
   font-style: normal;
   font-weight: 300;
 }
 @font-face {
-  font-family: "Open Sans Bold";
-  src: url("../fonts/Opensansbold.woff") format("woff"), url("../fonts/Opensansbold.woff2") format("woff2");
+  font-family: "opensansbold";
+  src: url("../fonts/opensansbold.woff") format("woff"), url("../fonts/opensansbold.woff2") format("woff2");
   font-style: normal;
   font-weight: 700;
 }
@@ -726,21 +726,21 @@ ul {
   padding: 0;
 }
 body {
-  font-family: "Open Sans", "Gilroy Light", "Arial", sans-serif;
+  font-family: "opensans", "Gilroylight", "Arial", sans-serif;
 }
 h1 {
-  font-family: "Gilroy Extrabold", "Arial", sans-serif;
+  font-family: "Gilroyextrabold", "Arial", sans-serif;
 }
 h2 {
-  font-family: "Gilroy Extrabold", "Arial", sans-serif;
+  font-family: "Gilroyextrabold", "Arial", sans-serif;
   font-size: 47px;
 }
 h3 {
-  font-family: "Gilroy Extrabold", "Arial", sans-serif;
+  font-family: "Gilroyextrabold", "Arial", sans-serif;
   font-size: 18px;
 }
 a {
-  font-family: "Gilroy Extrabold", "Arial", sans-serif;
+  font-family: "Gilroyextrabold", "Arial", sans-serif;
   font-size: 18px;
   text-decoration: none;
   color: black;
@@ -750,7 +750,7 @@ p {
   font-size: 15px;
 }
 span {
-  font-family: "Gilroy Extrabold", "Arial", sans-serif;
+  font-family: "Gilroyextrabold", "Arial", sans-serif;
 }
 .container {
   width: 1160px;
